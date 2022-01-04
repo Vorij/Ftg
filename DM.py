@@ -1,5 +1,4 @@
 
-# by @Friendly_userbot - @IO3EP
 from .. import loader, utils
 
 class DelmeMod(loader.Module):
