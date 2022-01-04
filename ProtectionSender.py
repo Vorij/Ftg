@@ -153,7 +153,7 @@ Distributing without author's tag is strictly prohibited by license"""
 
         async def edited_handler(event):
             cid = str(utils.get_chat_id(event.message))
-            user = message.sender.id or None
+            user = message.sender.id if message.sender.id is not None else 0
             await self.check_user(cid, user, 'edited', event)
 
         try:
