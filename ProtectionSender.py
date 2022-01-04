@@ -924,7 +924,7 @@ Distributing without author's tag is strictly prohibited by license"""
             if cid not in self.chats or not self.chats[cid]:
                 return
 
-            user = message.sender.id
+            user = message.sender.id or None
 
             if 'defense' in self.chats[cid] and user in self.chats[cid]['defense']:
                 return
