@@ -6,7 +6,7 @@ def register(cb):
     cb(LoveMod())
 
 class LoveMod(loader.Module):
-    """Love"""
+    """Удиви свою девушку. @Friendly_userbot - @ForceBrain"""
     strings = {'name': 'Love'}
 
     async def lovecmd(self, message):
